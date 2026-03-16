@@ -24,7 +24,7 @@ html {
 body {
   background: var(--bg);
   color: var(--ink);
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.4;
   min-height: 100vh;
@@ -205,12 +205,6 @@ body::-webkit-scrollbar { display: none; }
   justify-content: center;
   position: relative;
   overflow: hidden;
-}
-
-.card-poster-icon {
-  opacity: 0.25;
-  color: #fff;
-  transform: scale(2.2);
 }
 
 .card-poster-play {

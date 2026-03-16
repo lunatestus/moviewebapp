@@ -60,15 +60,6 @@ let toastTimer = null;
 let isHeroFocused = true;
 let heroButtonIndex = 0; // 0 = Play, 1 = Details
 
-// ── Icons ────────────────────────────────────────────
-function folderIcon() {
-  return `<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>`;
-}
-
-function movieIcon() {
-  return `<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>`;
-}
-
 function playIcon() {
   return `<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>`;
 }
@@ -109,7 +100,6 @@ function buildRows() {
 
       card.innerHTML = `
         <div class="card-poster" style="background: linear-gradient(135deg, ${posterColor}, ${posterColor}88, #111)">
-          <div class="card-poster-icon">${isFolder ? folderIcon() : movieIcon()}</div>
           ${!isFolder ? `<div class="card-poster-play">${playIcon()}</div>` : ""}
         </div>
         <div class="card-info">
