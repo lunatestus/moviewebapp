@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alex TV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app" class="app">
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-gradient"></div>
+      <div class="hero-content">
+        <div class="hero-badge">Featured</div>
+        <h1 id="heroTitle" class="hero-title">Echoes of Mars</h1>
+        <p id="heroMeta" class="hero-meta">Movie · 8.5 GB · 2026</p>
+        <div class="hero-actions">
+          <button id="heroPlay" class="hero-btn hero-btn-primary" type="button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            Play
+          </button>
+          <button id="heroInfo" class="hero-btn hero-btn-secondary" type="button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+            Details
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rows Container -->
+    <div id="rows" class="rows"></div>
+  </div>
+
+  <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
+  <div id="clock" class="clock"></div>
+  <script src="script.js"></script>
+</body>
+</html>
