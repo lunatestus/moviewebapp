@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             isHorizontalScrollBarEnabled = false
 
             // Performance tweaks
-            setLayerType(LAYER_TYPE_HARDWARE, null)
+            setLayerType(android.view.View.LAYER_TYPE_HARDWARE, null)
 
             webViewClient = WebViewClient()
             webChromeClient = WebChromeClient()
